@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #202a2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6b244;
+    border-radius: 0.5rem;
+}
+
+body {
+    background: #151a1c;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background: #202a2c;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+.header h1 {
+    font-family: 'Montaga', serif;
+    color: #d6b244;
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.countries-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 20rem);
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.country-card {
+    height: 22rem;
+    background-color: #202a2c;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.country-card:hover {
+    opacity: 1;
+}
+
+.country-img-container {
+    height: 12rem;
+    width: 18rem;
+}
+
+.country-img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.country-card h4 {
+    margin-top: 0.5rem;
+}
+
+.country-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.country-info {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #f5f5f5
+}
+
+.search-tools {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    padding: 0.7rem 1.4rem;
+    border-radius: 5px;
+    background:#202a2c;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+select {
+    padding: 0.7rem 1.4rem;
+    background:#202a2c;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.btn {
+    padding: 0.7rem 1.4rem;
+    background:#202a2c;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.details-card {
+    margin-top: 5rem;
+    height: 32rem;
+    width: 25rem;
+    background: #202a2c;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.details-img-container img {
+    width: 100%;
+    max-height: 17rem;
+    border-radius: 5px;
+}
+
+.details-title {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.details-info {
+    margin-top: 0.7rem;
+    color: #fff;
+    font-weight: 400;
+}
